@@ -1,0 +1,306 @@
+*{
+	padding: 0;
+	margin: 0;
+	/*border: solid 5px black;*/
+
+}
+
+:root{
+	--colorTextos: #49454567;
+}
+
+body{
+	font-family: Arial, Helvetica, monospace;
+	/*background-color: darkred;*/
+	background: #cb2d3e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-size: 18px;
+}
+
+header{
+	 /*background-color: #151A1A;*/
+	 	background: #000000;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	 background-size: 100% 100%;
+	 height: 100vh;
+	 color: whitesmoke;
+	 margin: 2px;
+}
+
+header #menu{
+	padding: 10px 0;
+	display: flex;
+
+	justify-content: space-between;
+
+}
+
+#logo{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 30px;
+}
+
+
+
+nav{
+
+	display: flex;
+	gap: 20px;
+	padding-right: 80px;
+}
+
+#menu{
+	display: flex;
+	gap: 30px;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+#menu a{
+
+	color: white;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: darkred;
+	text-decoration: underline;
+
+}
+
+/**********************************************/
+
+#main-2{
+	display: flex;
+	width: 250px;
+	height: 250px;
+	flex-basis: 200px ;
+}
+
+.main-1{
+		flex-flow: column wrap;
+		height: 250px;
+		justify-content: space-between;
+
+}
+
+.main-1 h1{
+	font-size: 65px;
+
+}
+
+.main-1 p{
+	margin-top: 45px;
+	font-size: 20px;
+	width: 80%;
+
+	align-self: center;
+}
+
+.main-1 #boton1{
+	display: flex;
+	border: 0;
+	background-color: #EE5144;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	font-size: 24px;
+	padding: 15px;
+	margin-top: 15%;
+}
+
+.main-1 #boton1:hover{
+	background-color: darkred;
+
+}
+
+main{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+/***************************************************/
+
+.layout{
+	width: 96%;
+	margin: 2%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	justify-content: space-around;
+	padding-top: 50px;
+	
+}
+
+.seccion1{
+	background-color: #ededed;
+
+}
+
+.layout h3{
+
+	font-size: 48px;
+	text-align: center;
+
+}
+
+.layout p{
+	padding: 25px;
+	line-height: 40px;
+}
+
+.layout-left .textt{
+	width: 500px;
+}
+
+.layout-left{
+	background-color: #ededed;
+}
+
+.layout-right .textt{
+	width: 500px;
+	order: 1;
+}
+
+.layout-right{
+	background-color: #ededed;
+}
+
+.imagen{
+	order: 0;
+
+}
+
+footer{
+	/*background-color: #151A1A;*/
+	padding: 50px 20px;
+	color: white;
+	text-align: center;
+	background: #000000;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#derechos{
+	padding-top: 30px;
+}
+
+form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footi{
+	width: 350px;
+	height: 400px;
+	background-color: #ededed;
+	display: flex;
+	color: black;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	font-size: 25px;
+	font-family: 'Mouse Memoirs', sans-serif;
+	border-radius: 10px;
+	box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.footi h2{
+	padding-top: 5px;
+	padding-bottom: 20px;
+	color: black;
+
+
+}
+
+#boton2{
+	width: 35%;
+	height: 10%;
+	font-family: ;
+	margin-bottom: 30px;
+	background: darkred;
+	font-family: 'Mouse Memoirs', sans-serif;
+	font-size: 25px;
+	border-radius: 5px;
+	align-self: center;
+
+}
+
+.grupo input{
+	background: none;
+	color: #c6c6c6;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	margin-bottom: 10px;
+	width: 85%;
+	border: none;
+	border-bottom: 1px solid var(--colorTextos);
+	resize: none;
+	gap: 10px;
+
+}
+
+input:focus{
+	outline: none;
+	color: rgb(94,93,93);
+
+
+}
+
+input:focus~label
+{
+	position: relative;
+	font-size: 28px;
+	color: #2196f3;
+	display: flex;
+	flex-direction: column;
+	top: -70px;
+	left: -100px;
+}
+
+label{
+	color: var(--colorTextos);
+	font-size: 25px;
+	position: relative;
+	left: -130px;
+	top: -45px;
+	transition: 1.0s ease all;
+	pointer-events: none;
+}
+
+
+
+
+input:focus~.barra::before{
+	width: 95%;
+
+}
+
+.barra{
+	position: relative;
+	display: block;
+	width: 95%;
+}
+
+.barra::before{
+	content: '';
+	height: 2px;
+ 	width: 0%;
+ 	bottom: 0;
+ 	position: absolute;
+ 	background: linear-gradient(to right, #cb2d3e, #434343);
+ 	transition: 0.6s ease all;
+ 	left: 18px;
+ 	top: -11px;
+}
+
+
+

@@ -193,7 +193,7 @@ footer{
 	padding-top: 30px;
 }
 
-form{
+.forma{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -266,7 +266,7 @@ input:focus~label
 	left: -100px;
 }
 
-label{
+.forma label{
 	color: var(--colorTextos);
 	font-size: 25px;
 	position: relative;
@@ -302,5 +302,57 @@ input:focus~.barra::before{
  	top: -11px;
 }
 
+/*********************************************/
+
+.forr{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
+}
+
+.forr label{
+	display: flex;
+	justify-content: center;
+ 	
+}
+
+/*.grupo2{
+	font-size: 20px;
+	padding: 40px 10px 10px 5px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.col1{
+	border-bottom: 1px solid var(--colorTextos);
+	width: 90%;
+}
+*/
+
+.grupo2{
+	font-size: 25px;
+	padding: 20px 10px 17px 5px;
+	position: relative;
+	top: -20px;
+}
 
 
+.contac h2{
+	padding-top: 15px;
+	padding-bottom: 0px;
+	color: black;
+
+}
+
+.gran{
+	display: flex;
+	justify-content: space-around;
+
+}
